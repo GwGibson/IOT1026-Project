@@ -56,6 +56,4 @@
     public enum Direction { North, South, West, East }
     // Represents the size of the game map.
     public enum Size { Small, Medium, Large };
-    // Must match class names for dynamic registering to work properly - not ideal.
-    public enum RoomType { Room, Entrance, Sword, Wall, Pit }
 }
