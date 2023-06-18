@@ -117,8 +117,12 @@
         {
             // Ensure monster locations do not overlap existing locations on the map
             Location minotaurLocation = ProceduralGenerator.GetRandomLocation();
-            Room room = map.GetRoomAtLocation(minotaurLocation);
-            room.AddMonster(new Minotaur());
+            Room minotaurRoom = map.GetRoomAtLocation(minotaurLocation);
+            minotaurRoom.AddMonster(new Minotaur());
+
+            Location nightmareLocation = ProceduralGenerator.GetRandomLocation();
+            Room nightmareRoom = map.GetRoomAtLocation(nightmareLocation);
+            nightmareRoom.AddMonster(new Nightmare());
         }
     }
 }

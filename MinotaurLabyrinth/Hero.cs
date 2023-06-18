@@ -29,6 +29,9 @@
         // Explains why a player died.
         public string CauseOfDeath { get; private set; } = "";
 
+        // The player's health attribute.
+        public int Health { get; set; } = 100;
+
         public void Kill(string cause)
         {
             IsAlive = false;

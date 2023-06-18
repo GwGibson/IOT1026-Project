@@ -1,4 +1,4 @@
-namespace MinotaurLabyrinth
+﻿namespace MinotaurLabyrinth
 {
     /// <summary>
     /// Represents a radius room that displays all room types within a certain radius.
